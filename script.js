@@ -87,8 +87,8 @@ const products = [
     badge: "mall",
     colors: [
       { name: "Gamis Anak-Anak", img: "images/gamisa1.jpg" },
-      { name: "Gamis Anak Putih", img: "images/gamis2.jpg" },
-      { name: "Gamis Anak Hitam", img: "images/gamis3.jpg" }
+      { name: "Gamis Anak Putih", img: "images/gamisa2.jpg" },
+      { name: "Gamis Anak Hitam", img: "images/gamisa3.jpg" }
     ]
   }
 ];
