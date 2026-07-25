@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damar Busana — Toko Resmi</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    
+    <!-- Store Head & Tabs -->
+    <div class="store-head">
+
+    <img src="images/aelen.jpeg" alt="Foto Toko" class="profile-img">
+
+    <div class="store-meta">
+        <h1>Damar Busana</h1>
+        <p>Toko Resmi</p>
+    </div>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="produk">PRODUK</button>
+        <button class="tab-btn" data-tab="tentang">TENTANG TOKO</button>
+        <button class="tab-btn" data-tab="kontak">KONTAK</button>
+      </div>
+    </div>
+
+    <!-- Produk View -->
+    <div class="view active" id="view-produk">
+      <div class="toko-banner">
+        <img src="images/produk1.jpg" alt="toko-banner" class="profile-img">
+      </div>
+
+      
+
+      <div class="grid" id="product-grid"></div>
+    </div>
+
+    <!-- Tentang Toko View -->
+    <div class="view" id="view-tentang"> 
+      <div class="about-block">
+        <h3>Tentang Kami</h3>
+        <p>Toko Damar Busana merupakan bisnis ritel pakaian terlengkap yang menyediakan segala jenis pakaian tren terkini untuk pria, wanita, anak-anak, hingga remaja dalam satu tempat. Bisnis ini mengusung visi menjadi pusat fashion terpercaya yang menghadirkan solusi berpakaian berkualitas dan modis bagi seluruh anggota keluarga. Untuk mewujudkannya, toko berkomitmen menjalankan misi dengan terus memperbarui koleksi pakaian kasual hingga formal, menjaga standar kualitas bahan yang nyaman dengan harga bersaing, serta konsisten memberikan pelayanan terbaik demi kenyamanan dan kepuasan berbelanja konsumen.</p>
+      </div>
+      <div class="about-block">
+        <h3>Informasi Toko</h3>
+        <div class="row-info"><span>Lokasi Toko</span><span>Cikarang Selatan, Bekasi, Jawa Barat</span></div>
+        <div class="row-info"><span>Estimasi Kirim</span><span>1–4 hari</span></div>
+        <div class="row-info"><span>Pengiriman</span><span>Reguler, Kargo</span></div>
+      </div>
+      <div class="about-block">
+        <h3>Produk Populer</h3>
+        <div class="grid" id="about-grid" style="padding:0;"></div>
+      </div>
+    </div>
+
+    <!-- Kontak View -->
+    <div class="view" id="view-kontak">
+      <a href="https://www.instagram.com/ikeaprilia04?igsh=MTlrM25jajc5czVxZQ==" class="contact-card">
+        <div class="contact-icon">💬</div>
+        <div>
+            <p class="c-title">Chat via Instagram</p>
+      </div>
+      </a>
+
+      <a href="https://wa.me/6285545211731?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Damar%20Busana."
+   class="contact-card"
+   target="_blank">
+
+        <div class="contact-icon">📞</div>
+
+        <div>
+            <p class="c-title">WhatsApp Toko</p>
+        </div>
+
+        </a>        
+      <a href="mailto:cs@ikeapriliaumar@gmail.com?subject=Pertanyaan%20Produk&body=Halo,%20saya%20ingin%20bertanya%20mengenai%20produk."
+   class="contact-card">
+
+    <div class="contact-icon">✉️</div>
+
+    <div>
+        <p class="c-title">Email</p>
+    </div>
+
+</a>
+      <a href="https://maps.app.goo.gl/FTZF3vQnKQYuCU327"
+   class="contact-card"
+   target="_blank">
+
+    <div class="contact-icon">📍</div>
+
+    <div>
+        <p class="c-title">Jl Mega raya Toko Damar</p>
+        <p class="c-sub"></p>
+    </div>
+
+</a>
+      <div class="hours-block">
+        <h3>Jam Operasional</h3>
+        <div class="row-info"><span>Senin – Minggu</span><span>08.00 – 22.00</span></div>
+      </div>
+    </div>
+
+    <!-- Product Detail View -->
+    <div id="detail-view">
+      <div class="d-topbar">
+        <button class="icon-btn" id="btn-back">←</button>
+        <div class="spacer"></div>
+        <button class="icon-btn">↗</button>
+        <button class="icon-btn">⋮</button>
+      </div>
+
+      <div class="d-hero">
+        <img id="d-hero-img" src="" alt="">
+        <div class="d-counter" id="d-counter">1/5</div>
+        <div class="d-zoom-hint">🔍 Ketuk untuk perbesar</div>
+      </div>
+
+      <div class="d-swatch-strip" id="d-swatch-strip"></div>
+
+      <div class="d-discbar">
+        <span>Diskon 10%, Hemat Rp15,03RB</span>
+        <div class="timer"><span id="t-h">49</span>:<span id="t-m">51</span>:<span id="t-s">00</span></div>
+      </div>
+
+      <div class="d-price-block">
+        <div class="d-price-row">
+          <span class="d-price" id="d-price">Rp135.270</span>
+          <span class="d-sold" id="d-sold">424 Terjual ♡</span>
+        </div>
+      </div>
+
+      <div class="d-section">
+        <p class="d-title" id="d-title"></p>
+      </div>
+
+      <div class="d-section">
+        <h3>Warna — <span id="d-color-name">Light Blue</span></h3>
+        <div class="d-swatch-strip" id="d-color-strip" style="padding:0;"></div>
+      </div>
+
+      <div class="d-section">
+        <h3>Ukuran: <span id="d-size-name">S</span> · Rekomendasi via WhatsApp</h3>
+        <div class="size-row">
+          <div class="size-chip active">S</div>
+          <div class="size-chip">M</div>
+          <div class="size-chip">L</div>
+          <div class="size-chip">XL</div>
+          <div class="size-chip">XXL</div>
+        </div>
+      </div>
+
+      <div class="d-section">
+        <div class="delivery-row"><strong></strong></div>
+        <div class="delivery-row" style="margin-top:6px;"></div>
+      </div>
+
+      <div class="d-actionbar">
+        <a href="#" id="chat-btn" class="icon-btn" target="_blank" rel="noopener">💬</a>
+        <a href="#" id="buy-btn" class="buy-btn" target="_blank" rel="noopener">BELI VIA WHATSAPP<br></a>
+      </div>
+    </div>
+
+    <!-- Lightbox foto (perbesar & geser) -->
+    <div id="lightbox">
+      <button id="lightbox-close" aria-label="Tutup">✕</button>
+      <img id="lightbox-img" src="" alt="Foto produk diperbesar">
+      <div id="lightbox-counter">1/5</div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
